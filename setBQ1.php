@@ -1,14 +1,18 @@
-
-
 <?php
 
-$l=$_POST["t1"];
-$b=$_POST["t2"];
-$h=$_POST["t3"];
-$s=2*($l*$b+$l*$h+$b*$h);
-$v=($l*$b*$h);
+  $s1="rbnb";
+  $s2="college";
+  $k=strcmp($s1,$s2);
+   if($k==0)
+     echo "String are same..";
+   if($k>0)
+     echo "First string is greater=".$s1;
+    
+   if($k<0)
+     echo "Second string is greater=".$s2;
 
-echo "<br>surface area=".$s;
-echo "<br>volume of cuboid=".$v;
-
+    $s1=strtoupper($s1);
+    $s2=strtolower($s2);
+       echo "<br> Uppercase String=".$s1;
+       echo "<br> Uppercase String=".$s2;
 ?>
